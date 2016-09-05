@@ -18,3 +18,10 @@ function forEach ( array, cb ){
 	}
 	console.log("all done")
 }
+
+//or simply using the of keyword
+function forEach(array, cb){
+	for (let item of arrayGenerator(array)){
+		cb(item)
+	}
+}
